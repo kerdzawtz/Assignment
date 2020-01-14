@@ -16,7 +16,6 @@ Route::post('/register', 'Auth\AuthController@postRegister')->name('auth.postReg
 Route::post('/login', 'Auth\AuthController@postlogin')->name('auth.postLogin');
 Route::get('/logout', 'Auth\AuthController@logout')->name('auth.logout');
 
-// Route::get('/dashboard', 'AppController@getDashboard')->name('dashboard.index');
 //News
 Route::get('/dashboard', 'NewsController@index')->name('dashboard.index');
 Route::get('/news/ajax/','NewsController@ajax')->name('management.news.ajax');
